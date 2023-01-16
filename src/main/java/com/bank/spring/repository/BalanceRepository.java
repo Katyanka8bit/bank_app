@@ -10,4 +10,5 @@ import org.springframework.stereotype.Repository;
  */
 @Repository
 public interface BalanceRepository extends JpaRepository<Balance, Integer> {
+    Balance getBalanceByUserId(Integer id);
 }
